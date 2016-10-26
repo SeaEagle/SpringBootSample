@@ -8,6 +8,6 @@ import cn.eaglefire.app.demo.springbootpractice.bean.UserBean;
  */
 public interface IUserService {
 
-    public ResultBean validateUser(UserBean userBean);
+    public ResultBean validateUser(UserBean userBean) throws Exception;
 
 }

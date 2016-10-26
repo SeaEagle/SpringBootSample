@@ -2,11 +2,14 @@
 
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:context="http://www.springframework.org/schema/context" xmlns:p="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:jpa="http://www.springframework.org/schema/data/jpa"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/context
-       http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/data/jpa
+       http://www.springframework.org/schema/data/jpa/spring-jpa.xsd">
 
     <context:property-placeholder ignore-unresolvable="true" file-encoding="utf-8"
                                   location="classpath:*.properties" />
@@ -32,6 +35,20 @@
             <props>
                 <prop key="hibernate.connection.driver_class">${jdbc.driverClassName}</prop>
                 <prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop>
+                <!--<prop key="hibernate.naming.strategy">org.hibernate.boot.model.naming.ImplicitNamingStrategy</prop>-->
+                <!--<prop key="hibernate.naming.strategy">org.hibernate.boot.model.naming.PhysicalNamingStrategy</prop>-->
+                <!--<prop key="hibernate.naming.strategy">org.hibernate.cfg.ImprovedNamingStrategy</prop>-->
+                <!--<prop key="hibernate.implicit_naming_strategy">org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl</prop>-->
+                <!--<prop key="hibernate.implicit_naming_strategy">org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyHbmImpl</prop>-->
+                <!--<prop key="hibernate.physical_naming_strategy">org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl</prop>-->
+                <!--/*convet aaBb to aa_bb*/-->
+                <!--<property name="PhysicalNamingStrategy">-->
+                    <!--<bean class="fms.util.hibernate.ImprovedNamingStrategy" />-->
+                <!--</property>-->
+                <!--/*convet aa_bb to aaBb*/-->
+                <!--<property name="ImplicitNamingStrategy">-->
+                    <!--<bean class="org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyHbmImpl" />-->
+                <!--</property>-->
                 <prop key="hibernate.max_fetch_depth">3</prop>
                 <prop key="hibernate.jdbc.fetch_size">18</prop>
                 <prop key="hibernate.jdbc.batch_size">10</prop>
@@ -47,5 +64,7 @@
     <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
         <property name="entityManagerFactory" ref="entityManagerFactory"/>
     </bean>
+
+    <jpa:repositories base-package="cn.eaglefire.app.demo.springbootpractice.repository" />
 
 </beans>

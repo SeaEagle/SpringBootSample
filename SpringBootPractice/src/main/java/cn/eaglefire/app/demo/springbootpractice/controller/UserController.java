@@ -21,14 +21,8 @@ public class UserController {
     @Autowired
     IUserService userService;
 
-    @Autowired
-    private ApplicationContext context;
-
-    @Autowired
-    private EntityManagerFactory entityManagerFactory;
-
     @RequestMapping("index")
-    public String index(){
+    public String index() throws Exception{
         userService.validateUser(new UserBean());
         return "Hello World";
     }
