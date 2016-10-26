@@ -7,6 +7,8 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.persistence.EntityManagerFactory;
+
 /**
  * User Module
  *
@@ -21,6 +23,9 @@ public class UserController {
 
     @Autowired
     private ApplicationContext context;
+
+    @Autowired
+    private EntityManagerFactory entityManagerFactory;
 
     @RequestMapping("index")
     public String index(){
