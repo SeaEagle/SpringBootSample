@@ -13,6 +13,8 @@ public class User implements Serializable{
 
     private Date birthDate;
 
+    private String name;
+
     @Id
     private Long id;
 
