@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../SpringBootWithDubboAPI/SpringBootWithDubboAPI.iml" filepath="$PROJECT_DIR$/../SpringBootWithDubboAPI/SpringBootWithDubboAPI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBootWithDubboAggregator.iml" filepath="$PROJECT_DIR$/SpringBootWithDubboAggregator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SpringBootWithDubboProvider/SpringBootWithDubboProvider.iml" filepath="$PROJECT_DIR$/../SpringBootWithDubboProvider/SpringBootWithDubboProvider.iml" />
+    </modules>
+  </component>
+</project>

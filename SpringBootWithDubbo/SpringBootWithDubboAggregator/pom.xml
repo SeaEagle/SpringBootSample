@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--  -->
+    <groupId>cn.eaglefire.app.demo</groupId>
+    <!-- 聚合模块 -->
+    <artifactId>SpringBootWithDubboAggregator</artifactId>
+    <!-- 版本 -->
+    <version>0.0.1</version>
+    <!-- 打包类型 -->
+    <packaging>pom</packaging>
+    <!-- 模块名称 -->
+    <name>SpringBootWithDubboAggregator</name>
+
+    <!-- 模块 -->
+    <modules>
+        <!-- API模块 -->
+        <module>../SpringBootWithDubboAPI</module>
+        <!-- Provider模块 -->
+        <module>../SpringBootWithDubboProvider</module>
+    </modules>
+
+    <!-- 开发者 -->
+    <developers>
+        <developer>
+            <name>eagle, 郑海鹰</name>
+            <url>https://github.com/SeaEagle</url>
+        </developer>
+    </developers>
+
+</project>
