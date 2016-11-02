@@ -21,6 +21,13 @@
     <!-- 依赖 -->
     <dependencies>
 
+        <!-- API -->
+        <dependency>
+            <groupId>cn.eaglefire.app.demo</groupId>
+            <artifactId>SpringBootWithDubboAPI</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+
         <!-- junit -->
         <dependency>
             <groupId>junit</groupId>

@@ -1,3 +1,16 @@
+.idea
+*.iml
+target
+
 */.idea
 */*.iml
 */target
+
+*/*/.idea
+*/*/*.iml
+*/*/target
+
+*/*/*/.idea
+*/*/*/*.iml
+*/*/*/target
+SpringBootWithDubbo/SpringBootWithDubboAggregator/.idea/workspace.xml
