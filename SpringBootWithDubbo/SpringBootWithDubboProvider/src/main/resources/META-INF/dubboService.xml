@@ -10,15 +10,19 @@
        http://code.alibabatech.com/schema/dubbo
        http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
+    <context:property-placeholder ignore-unresolvable="true" file-encoding="utf-8"
+                                  location="classpath:dubbo.properties" />
+
     <!-- 扫描注解服务 -->
     <!--<context:component-scan base-package="cn.eaglefire.app.demo.provider.springbootwithdubboprovider.service" />-->
 
     <!---->
-    <dubbo:application name="SpringBootWithDubbo" />
+    <dubbo:application name="${dubbo.application.name}" />
 
-    <dubbo:registry address="zookeeper://127.0.0.1:2181"/>
+    <dubbo:registry address="${dubbo.registry.address}"/>
+    <!--<dubbo:registry address="zookeeper://192.168.0.181:2181"/>-->
 
-    <dubbo:protocol name="dubbo" port="20880" />
+    <dubbo:protocol name="${dubbo.protocol.name}" port="${dubbo.protocol.port}" />
 
     <!-- 添加该配置会报错 -->
     <!-- 优雅关机 -->

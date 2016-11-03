@@ -1,12 +1,9 @@
 package cn.eaglefire.app.demo.provider.springbootwithdubboprovider;
 
-import com.alibaba.dubbo.config.ProtocolConfig;
 import com.alibaba.dubbo.container.Main;
 import org.apache.log4j.Logger;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import javax.annotation.PreDestroy;
 
 /**
  * Created by eagle on 2016/11/2.
@@ -24,14 +21,11 @@ public class SpringBootWithDubboProviderApplication {
 
 //        logger.info("Dubbo Service Starting.");
 //        Main.main(args);
-//        ProtocolConfig.destroyAll();
 //        logger.info("Dubbo Service Stop.");
 
-    }
+        //
+        //Runtime.getRuntime().addShutdownHook(new ApplicationShutdownHook());
 
-    @PreDestroy
-    public static void preDestory(){
-        logger.info("PreDestory Test.");
     }
 
 }

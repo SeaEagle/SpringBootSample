@@ -1,0 +1,36 @@
+2016-11-03 11:16:02.228  INFO 2556 --- [main] s.SpringBootWithDubboProviderApplication : Starting SpringBootWithDubboProviderApplication on DESKTOP-GI5T77D with PID 2556 (E:\Code\Github\SpringBootSample\SpringBootWithDubbo\SpringBootWithDubboProvider\target\classes started by eagle in E:\Code\Github\SpringBootSample\SpringBootWithDubbo\SpringBootWithDubboAggregator)
+2016-11-03 11:16:02.229  INFO 2556 --- [main] s.SpringBootWithDubboProviderApplication : No active profile set, falling back to default profiles: default
+2016-11-03 11:16:02.415  INFO 2556 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7bc77f69: startup date [Thu Nov 03 11:16:02 CST 2016]; root of context hierarchy
+2016-11-03 11:16:06.412  INFO 2556 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8b562d5c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-03 11:16:07.583  INFO 2556 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2016-11-03 11:16:07.599  INFO 2556 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-11-03 11:16:07.601  INFO 2556 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.5
+2016-11-03 11:16:07.773  INFO 2556 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2016-11-03 11:16:07.774  INFO 2556 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5366 ms
+2016-11-03 11:16:08.168  INFO 2556 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/springbootwithdubboprovider/*]
+2016-11-03 11:16:08.178  INFO 2556 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-11-03 11:16:08.179  INFO 2556 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-11-03 11:16:08.179  INFO 2556 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-11-03 11:16:08.179  INFO 2556 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2016-11-03 11:16:09.175  INFO 2556 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-11-03 11:16:09.206  INFO 2556 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-11-03 11:16:09.354  INFO 2556 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.11.Final}
+2016-11-03 11:16:09.357  INFO 2556 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2016-11-03 11:16:09.359  INFO 2556 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2016-11-03 11:16:09.447  INFO 2556 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-11-03 11:16:09.848  INFO 2556 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2016-11-03 11:16:10.233  INFO 2556 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2016-11-03 11:16:10.235  INFO 2556 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2016-11-03 11:16:10.349  INFO 2556 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2016-11-03 11:16:11.275  INFO 2556 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7bc77f69: startup date [Thu Nov 03 11:16:02 CST 2016]; root of context hierarchy
+2016-11-03 11:16:11.579  INFO 2556 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-11-03 11:16:11.581  INFO 2556 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-11-03 11:16:11.700  INFO 2556 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-03 11:16:11.701  INFO 2556 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-03 11:16:11.898  INFO 2556 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-03 11:16:12.593  INFO 2556 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-11-03 11:16:12.675  INFO 2556 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2016-11-03 11:16:12.681  INFO 2556 --- [main] s.SpringBootWithDubboProviderApplication : Started SpringBootWithDubboProviderApplication in 12.009 seconds (JVM running for 12.916)
+2016-11-03 11:16:12.681  INFO 2556 --- [main] s.SpringBootWithDubboProviderApplication : SpringApplication Finish.
