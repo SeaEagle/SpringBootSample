@@ -19,6 +19,8 @@
         <module>../SpringBootWithDubboAPI</module>
         <!-- Provider模块 -->
         <module>../SpringBootWithDubboProvider</module>
+        <!-- Provider模块 -->
+        <module>../SpringBootWithDubboProviderPlain</module>
     </modules>
 
     <!-- 开发者 -->
