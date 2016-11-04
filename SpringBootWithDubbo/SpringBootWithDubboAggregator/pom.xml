@@ -15,6 +15,8 @@
 
     <!-- 模块 -->
     <modules>
+        <!-- Dubbo Starter模块 -->
+        <module>../SpringBootWithDubboStarter</module>
         <!-- API模块 -->
         <module>../SpringBootWithDubboAPI</module>
         <!-- Provider模块 -->

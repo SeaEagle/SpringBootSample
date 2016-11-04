@@ -45,6 +45,12 @@
             <version>0.0.1</version>
         </dependency>
 
+        <dependency>
+            <groupId>cn.eaglefire.app.demo</groupId>
+            <artifactId>SpringBootWithDubboStarter</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
         <!-- MySQL -->
         <dependency>
             <groupId>MySQL</groupId>
