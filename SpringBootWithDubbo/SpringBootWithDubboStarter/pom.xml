@@ -1,0 +1,91 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- 父模块配置 -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.4.1.RELEASE</version>
+    </parent>
+
+    <!-- 所属组织 -->
+    <groupId>cn.eaglefire.app.demo</groupId>
+    <!-- 构件 -->
+    <artifactId>SpringBootWithDubboStarter</artifactId>
+    <!-- 打包方式 -->
+    <packaging>jar</packaging>
+    <!-- 版本 -->
+    <version>0.0.1-SNAPSHOT</version>
+    <!-- 名称 -->
+    <name>SpringBootWithDubboStarter</name>
+
+    <properties>
+        <!-- dubbo版本 -->
+        <dubbo.version>2.5.3</dubbo.version>
+        <!-- junit版本 -->
+        <junit.version>4.12</junit.version>
+    </properties>
+
+    <!-- 依赖 -->
+    <dependencies>
+
+        <!-- API -->
+        <dependency>
+            <groupId>cn.eaglefire.app.demo</groupId>
+            <artifactId>SpringBootWithDubboAPI</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- dubbo -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>dubbo</artifactId>
+            <version>${dubbo.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <!-- junit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+    <!-- 开发者 -->
+    <developers>
+        <developer>
+            <name>eagle, 郑海鹰</name>
+            <url>https://github.com/SeaEagle</url>
+        </developer>
+    </developers>
+
+</project>

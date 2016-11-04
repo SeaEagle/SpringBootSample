@@ -1,0 +1,1 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=cn.eaglefire.app.demo.starter.springbootwithdubbostarter.configuration.DubboAutoConfiguration
