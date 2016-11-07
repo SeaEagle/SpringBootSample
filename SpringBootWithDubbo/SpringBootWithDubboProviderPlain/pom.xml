@@ -21,6 +21,7 @@
     <name>SpringBootWithDubboProviderPlain</name>
 
     <properties>
+        <start.class>cn.eaglefire.app.demo.provider.springbootwithdubboproviderplain.SpringBootWithDubboProviderPlainApplication</start.class>
         <!-- mysql版本 -->
         <mysql.version>5.1.38</mysql.version>
         <!-- dubbo版本 -->
@@ -149,6 +150,28 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+            <!--<plugin>-->
+                <!--<artifactId>maven-assembly-plugin</artifactId>-->
+                <!--<configuration>-->
+                    <!--<descriptorRefs>-->
+                        <!--<descriptorRef>jar-with-dependencies</descriptorRef>-->
+                    <!--</descriptorRefs>-->
+                    <!--<archive>-->
+                    <!--<manifest>-->
+                        <!--<mainClass>${start.class}</mainClass>-->
+                    <!--</manifest>-->
+                <!--</archive>-->
+                <!--</configuration>-->
+                <!--<executions>-->
+                    <!--<execution>-->
+                        <!--<id>make-assembly</id>-->
+                        <!--<phase>package</phase>-->
+                        <!--<goals>-->
+                            <!--<goal>single</goal>-->
+                        <!--</goals>-->
+                    <!--</execution>-->
+                <!--</executions>-->
+            <!--</plugin>-->
         </plugins>
     </build>
 

@@ -14,3 +14,4 @@ target
 */*/*/*.iml
 */*/*/target
 SpringBootWithDubbo/SpringBootWithDubboAggregator/.idea/workspace.xml
+SpringBootWithDubbo/SpringBootWithDubboAggregator/provider.log/spring.log

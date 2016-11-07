@@ -13,7 +13,7 @@ import org.springframework.core.annotation.Order;
  */
 @Configuration
 @Order
-@PropertySource("classpath:dubbo.properties")
+@PropertySource(ignoreResourceNotFound = true, encoding = "utf-8", value = {"classpath:dubbo.properties", "file:./dubbo.properties"})
 @ImportResource(locations = {"classpath:META-INF/dubboService.xml"})
 public class DubboAutoConfiguration {
 
