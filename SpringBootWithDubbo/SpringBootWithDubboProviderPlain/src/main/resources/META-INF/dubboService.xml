@@ -10,7 +10,10 @@
        http://code.alibabatech.com/schema/dubbo
        http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
-    <context:property-placeholder ignore-unresolvable="true" file-encoding="utf-8"
+    <context:property-placeholder file-encoding="utf-8"
+                                  ignore-unresolvable="true"
+                                  ignore-resource-not-found="true"
+                                  system-properties-mode="OVERRIDE"
                                   location="classpath:dubbo.properties" />
 
     <!-- 扫描注解服务 -->
