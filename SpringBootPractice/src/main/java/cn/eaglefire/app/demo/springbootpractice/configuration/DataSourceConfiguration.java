@@ -3,6 +3,7 @@ package cn.eaglefire.app.demo.springbootpractice.configuration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.ImportResource;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 /**
  * Datasource Configuration
@@ -10,6 +11,7 @@ import org.springframework.context.annotation.ImportResource;
  * Created by eagle on 2016/10/19.
  */
 @Configuration
+//@EnableTransactionManagement
 @ImportResource(locations = {"classpath:META-INF/datasource.xml"})
 public class DataSourceConfiguration {
 

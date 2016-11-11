@@ -13,12 +13,13 @@ import org.springframework.transaction.annotation.Transactional;
  * Created by eagle on 2016/10/18.
  */
 @Component
+@Transactional(rollbackFor = {java.lang.Exception.class})
 public class UserService implements IUserService{
 
     @Autowired
     private UserRepository userRepository;
 
-    @Transactional(rollbackFor = {java.lang.Exception.class})
+//    @Transactional
     @Override
     public ResultBean validateUser(UserBean userBean) throws Exception{
         User user = new User();
